@@ -1,0 +1,213 @@
+.outterEducation{
+  min-height: 100vh;
+}
+.innerEducation{
+  display: flex;
+  flex-direction: row;
+}
+
+.leftAdjectment{
+  border: 0px solid ;
+  display: flex;
+}
+
+.innerLeft{
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  position: relative;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: .5rem;
+  row-gap: 1px;
+  height: 20vh;
+  width: 70%;
+  background-image:url("cloud.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position:-10px; 
+}
+
+.box:nth-child(2){
+  position: relative;
+    display: flex;
+  align-self: end;
+  animation: moving 4s infinite;
+}
+.box:nth-child(4){
+  position: relative;
+    display: flex;
+  align-self: end;
+  animation: moving 4s infinite;
+}
+.box:nth-child(1){
+  position: relative;  
+  display: flex;
+  align-self:self-start;
+  animation: moving 4s infinite;
+}
+.box:nth-child(3){
+  position: relative;
+  display: flex;
+  align-self:self-start;
+  animation: moving 4s infinite;
+}
+@keyframes moving{
+  50%{
+   width: 65%;
+   height: 19vh;
+  }
+}
+
+/* RightBox */
+.innerRight{
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 2rem;
+} 
+
+
+
+.skills{
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  color: var(--heading-dark);
+}
+.center{
+  border-bottom: 4px solid var(--heading-dark);
+   border-left: 5px solid var(--heading-light);
+  border-right: 5px solid var(--heading-light);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6px;
+  padding: 10px;
+  margin-top: -1.9rem;
+
+}
+.front-end{
+  display: none;
+}
+.back-end{
+  display: none;
+}
+.college{
+  margin-top: 0rem;
+}
+.tenth {
+border-bottom:none;
+}
+
+@media screen  and (max-width:805px){
+  
+  .front-end{
+    margin-top: 3rem;
+    /* border: 2px solid; */
+    display: flex;
+   justify-content: center;
+  }
+  .back-end{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  margin-right: 0rem;
+   
+  }
+  .innerEducation{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .innerLeft{
+    margin-left: 0px;
+    width: 100%;
+    height: 60vh;
+    margin-top: .1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    position: relative;
+  }
+  .box{
+    margin-top: .1rem;
+    row-gap: 03px;
+    height: 30%;
+    width: 75%;
+    background-size:100%;
+    background-position:-10px;
+    font-size: .6rem;
+  }
+  @keyframes moving{
+    50%{
+     width: 70%;
+     height: 28%;
+    }
+  }
+  .leftAdjectment{
+    margin-left: 0;
+  }
+
+/* CenterBox */
+.innerCenter{
+  margin-top: 2rem;
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.skills{
+  display: none;
+}
+.college{
+  row-gap: 1px;
+  margin-top: 0rem;
+  font-size: .8rem;
+  max-height: 5vh ;
+}
+.tweelth{
+font-size: .9rem;
+}
+.tenth{
+  font-size: .9rem;
+}
+.center{
+  min-height: 15vh;
+}
+/* RightBox */
+.innerRight{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: .5rem;
+} 
+
+}
+
+
+
+
+
+
+
+

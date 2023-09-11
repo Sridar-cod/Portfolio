@@ -1,0 +1,44 @@
+.outterNav{
+  width: 85px;
+  min-height: 100vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  background-color: var(--nav-bg);
+}
+nav{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+}
+
+@media screen  and (max-width:805px){
+  .outterNav{
+    min-width: 100vw;
+    min-height: 4vh;
+    border-radius: 0px;
+  }
+  nav{
+    position:sticky;
+    top: 0;
+    bottom: 0;
+  }
+
+  .ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  i{
+    font-size: 1.2rem;
+  }
+
+}

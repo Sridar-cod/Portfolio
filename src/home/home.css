@@ -1,0 +1,51 @@
+.outterHome{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("bg1.png");
+  background-size: 400px;
+}
+.profile{
+  border-radius: 50%;
+  width: 15vw;
+  height: 25vh;
+  background-image: url("./profile-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.links{
+  margin-top: 25px;
+
+}
+.homeLi{
+display:flex;
+justify-content:space-around;
+column-gap: 2.3rem;
+cursor: pointer;
+}
+ .innerHome{
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 24%;
+  height: 55vh;
+  background-color: var(--small-bg);
+} 
+
+@media screen  and (max-width:805px){
+  .innerHome{
+    width: 75%;
+  }
+  .profile{
+    width: 40vw;
+    height: 25vh;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+}
